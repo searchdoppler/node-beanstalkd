@@ -2,5 +2,5 @@
   "name": "node-beanstalkd",
   "version": "0.3.0",
   "main": "lib/node-beanstalkd",
-  "description": "Library to produce and consumer jobs for the beanstalkd work queue."
+  "description": "Library to produce and consume jobs for the beanstalkd work queue."
 }
