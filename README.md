@@ -5,10 +5,12 @@ Version: 0.3.0
 
 Example:
 
-var client = require('beanstalk_client').Client;
+```js
+var bs = require('node-beanstalkd')
+  , client = new bs.Client();
 
 client.connect('127.0.0.1:11300', function(err, conn) {
-  var job_data = {"data": {"name": "node-beanstalk-client"}};
+  var job_data = {"data": {"name": "node-beanstalkd"}};
   conn.put(0, 0, 1, JSON.stringify(job_data), function(err, job_id) {
     console.log('put job: ' + job_id);
 
@@ -17,14 +19,15 @@ client.connect('127.0.0.1:11300', function(err, conn) {
       console.log('got job data: ' + job_json);
       console.log('module name is ' + JSON.parse(job_json).data.name);
       conn.destroy(job_id, function(err) {
-	console.log('destroyed job');
+        console.log('destroyed job');
       });
     });
 
   });
 });
+```
 
 
 Try it:
 
-$ node test/test.js
+    $ node test/test.js
