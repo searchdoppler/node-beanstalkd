@@ -1,5 +1,6 @@
-{ "name": "beanstalk_client"
-,  "version": "0.2.0"
-,  "main": "lib/beanstalk_client"
-,  "description": "client library for the beanstalkd message queue server"
+{
+  "name": "node-beanstalkd",
+  "version": "0.3.0",
+  "main": "lib/node-beanstalkd",
+  "description": "Library to produce and consumer jobs for the beanstalkd work queue."
 }
