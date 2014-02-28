@@ -50,6 +50,6 @@ client.connect('127.0.0.1:11300', function (err, conn) {
 ```
 
 
-Try it:
+Try it (with `beanstalkd` running):
 
     $ node test/test.js
