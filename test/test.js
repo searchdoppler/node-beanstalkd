@@ -1,4 +1,5 @@
-var client = require('../lib/beanstalk_client').Client;
+var bs = require('../lib/node-beanstalkd')
+  , client = new bs.Client();
 
 client.connect('127.0.0.1:11300', function(err, conn) {
   var job_data = {"data": {"name": "node-beanstalk-client"}};
@@ -10,9 +11,13 @@ client.connect('127.0.0.1:11300', function(err, conn) {
       console.log('got job data: ' + job_json);
       console.log('module name is ' + JSON.parse(job_json).data.name);
       conn.destroy(job_id, function(err) {
-	console.log('destroyed job');
+	      console.log('destroyed job');
       });
     });
 
   });
+});
+
+client.on('close', function (err) {
+  console.log('closing...');
 });

@@ -1,7 +1,7 @@
 Beanstalkd Client for Node.js
 =============================
 
-Version: 0.2.0
+Version: 0.3.0
 
 Example:
 
@@ -28,12 +28,3 @@ client.connect('127.0.0.1:11300', function(err, conn) {
 Try it:
 
 $ node test/test.js
-  
-
-See also: http://github.com/benlund/node-beanstalk-worker
-
-===
-
-NPM:
-
-$ npm install beanstalk_client
