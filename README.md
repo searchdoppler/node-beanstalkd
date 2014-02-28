@@ -1,9 +1,10 @@
-Beanstalkd Client for Node.js
-=============================
+# Beanstalkd Client for Node.js
 
 Library to produce and consumer jobs for the [beanstalkd](http://kr.github.io/beanstalkd/) work queue. This is a fork of [node-beanstalk-client](https://github.com/benlund/node-beanstalk-client).
 
 Version: 0.3.0
+
+## Example
 
 Basic example producing one job and consuming one job:
 
@@ -56,3 +57,7 @@ client.connect('127.0.0.1:11300', function (err, conn) {
 Try it (with `beanstalkd` running):
 
     $ node test/test.js
+
+## License
+
+MIT License
