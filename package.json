@@ -1,6 +1,18 @@
 {
   "name": "node-beanstalkd",
   "version": "0.3.0",
+  "contributors": [{
+    "name": "Ben Lund",
+    "url": "https://github.com/benlund"
+  }, {
+    "name": "Robin Joseph",
+    "url": "https://github.com/robinjoseph08"
+  }],
   "main": "lib/node-beanstalkd",
-  "description": "Library to produce and consume jobs for the beanstalkd work queue."
+  "description": "Library to produce and consume jobs for the beanstalkd work queue.",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/robinjoseph08/node-beanstalkd"
+  }
 }
