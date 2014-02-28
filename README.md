@@ -21,7 +21,10 @@ client.connect('127.0.0.1:11300', function (err, conn) {
         name: "node-beanstalkd"
       }
     };
-    conn.put(0, 0, 1, JSON.stringify(data), function (err, id) {
+    var priority = 0;
+    var delay = 0; // number of seconds delay
+    var timeToRun = 1;
+    conn.put(priority, delay, timeToRun, JSON.stringify(data), function (err, id) {
       if(err) {
         console.log('Error putting job.');
       } else {
