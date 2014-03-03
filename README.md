@@ -58,6 +58,28 @@ Try it (with `beanstalkd` running):
 
     $ node test/test.js
 
+## Supported beanstalkd Commands
+
+* use
+* put
+* watch
+* ignore
+* reserve
+* reserve-with-timeout
+* delete
+* release
+* bury
+* touch
+* peek
+* peek-ready
+* peek-delayed
+* peek-buried
+* kick
+* kick-job
+* stats-job
+* stats-tube
+* stats
+
 ## License
 
 MIT License
